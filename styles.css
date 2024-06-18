@@ -1,0 +1,22 @@
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+divTitle {
+  color: green;
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+
+}
+
+h1 {
+  color: green;
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+
+}
