@@ -4,13 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Money Tables</title>
-  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../styleesSheets/sac.css">
 </head>
 <body>
-  <input type="number" id="TaxaJuros" placeHolder="Dgite a taxa de juros em meses" required>
-  <input type="number" id="DividaInicial" placeHolder="Digite o valor da divida" required>
-  <input type="number" id="Tempo" placeHolder="Digite o tempo em meses" required>
-  <button id="sacButton">Click para Calcular</button>
+  <div id="Header">
+      <div id="loading">.</div>
+      <div id="loaded">.</div> 
+  </div>
+  <div id="inputs">
+    <ul>
+      <li> <input type="number" id="TaxaJuros" placeHolder="Dgite a taxa de juros em meses" required> </li>
+      <li> <input type="number" id="DividaInicial" placeHolder="Digite o valor da divida" required> </li>
+      <li> <input type="number" id="Tempo" placeHolder="Digite o tempo em meses" required> </li>
+      <li> <button id="sacButton">Click para Calcular</button> </li>
+    </ul>
+  </div>
   <div id="SacTableData"></div>
   <script src="../scripts/sac.js"></script>
 </body>
