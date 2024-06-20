@@ -5,18 +5,48 @@ body {
     padding: 20px;
 }
 
-divTitle {
-  color: green;
+h1 {
+  color: black;
   width: 100%;
   margin: 0;
   padding: 20px;
 
 }
 
-h1 {
-  color: green;
-  width: 100%;
-  margin: 0;
-  padding: 20px;
 
+li a {
+padding: 0px 0px 0px 0px;
+}
+
+ul {
+    list-style-type: none;
+  }
+
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: gray;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+table tr:nth-child(odd) {
+    background-color: #d3d3d3;
 }
