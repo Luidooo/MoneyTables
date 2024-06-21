@@ -1,0 +1,29 @@
+<!<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Money Tables</title>
+  <link rel="stylesheet" href="../styleesSheets/tierPayback.css">
+</head>
+<body>
+  <div id="Header">
+      <div id="loading">.</div>
+      <div id="loaded">.</div> 
+  </div>
+  <div id="inputs">
+    <ul>
+      <li> <input type="number" id="TaxaJuros" placeHolder="Dgite a taxa de juros em meses" required> </li>
+      <li> <input type="number" id="DividaInicial" placeHolder="Digite o valor da divida" required> </li>
+      <li> <input type="number" id="Tempo" placeHolder="Digite o tempo em meses" required> </li>
+      <li> <button id="tierPaybackButton">Clique para Calcular</button> </li>
+      <li> <button id="exemple">Entender com um exemplo</button> </li>
+    </ul>
+  </div>
+  <div id="tables">
+    <div id="tierPaybackTableData"></div>
+  </div>
+  <script src="../scripts/tierPayback.js"></script>
+</body>
+</html>
+

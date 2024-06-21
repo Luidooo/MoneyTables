@@ -8,7 +8,6 @@ body {
 
 #Header{
   display: flex;
-
 }
 
 
@@ -56,7 +55,6 @@ a {
   color: #ffff;
   background-color: #9b45e5;
   border-radius: 25px;
-  /* border: 2px solid #b46cec; */
   border: 2px solid #d1a9f3;
   padding: 15px;
   text-align: center;

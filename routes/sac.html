@@ -13,13 +13,17 @@
   </div>
   <div id="inputs">
     <ul>
-      <li> <input type="number" id="TaxaJuros" placeHolder="Dgite a taxa de juros em meses" required> </li>
+      <li> <input type="number" id="TaxaJuros" placeHolder="Dgite a taxa de juros por mes" required> </li>
       <li> <input type="number" id="DividaInicial" placeHolder="Digite o valor da divida" required> </li>
-      <li> <input type="number" id="Tempo" placeHolder="Digite o tempo em meses" required> </li>
-      <li> <button id="sacButton">Click para Calcular</button> </li>
+      <li> <input type="number" id="Amortizacao" placeHolder="Digite a amortizacao" required> </li>
+      <li> <button id="sacButton">Clique para Calcular</button> </li>
+      <li> <button id="exemple">Entender com um exemplo</button> </li>
     </ul>
   </div>
-  <div id="SacTableData"></div>
+  <div id="tables">
+    <div id="sacTableData"></div>
+    <div id="sacTable"></div>
+  </div>
   <script src="../scripts/sac.js"></script>
 </body>
 </html>
