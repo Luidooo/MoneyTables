@@ -65,7 +65,7 @@ ul {
   list-style-type: none;
   }
 
-#tables, #inputs {
+#inputs {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -74,14 +74,23 @@ ul {
   border-radius: 10px;
 }
 
+#tables {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
 input {
-  color: white;
-  background-color: #9333e3;
+  color: black;
+  background-color: white;
   border: 2px solid #d1a9f3;
 }
 
 input::placeholder {
-  color: white; 
+  color: black; 
   opacity: 1; 
 }
 
@@ -89,7 +98,7 @@ input::placeholder {
 
 button {
     background-color: white;
-    color: #9333e3;
+    color: Black;
     padding: 10px 20px;
     border: none;
     border-radius: 15px;
@@ -98,11 +107,12 @@ button {
 }
 
 button:hover {
+    color: black;
     background-color: lightgrey;
 }
 
 table {
-    width: 80%;
+    width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
@@ -112,6 +122,7 @@ table, th, td {
 }
 
 th, td {
+    color: black;
     padding: 10px;
     text-align: left;
 }
