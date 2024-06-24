@@ -6,10 +6,12 @@ document.addEventListener("DOMContentLoaded", function() {
       txjIn = document.getElementById("TaxaJuros").value;
       dvdIn = document.getElementById("DividaInicial").value;
       tmp = document.getElementById("Tempo").value;
+      cac = document.getElementById("Carencia").value;
     } else{
       txjIn = 10;
       dvdIn = 100000;
       tmp = 5;
+      cac = 3;
     }
 
     txjIn = parseFloat(txjIn) / 100;
@@ -92,8 +94,31 @@ document.addEventListener("DOMContentLoaded", function() {
     tableBody2.appendChild(firtRow);
 
 
+    let juros = saldoDev * txjIn;
+
+    for(let i=0; i < cac; i++){
+
+      let newCac = document.createElement("tr");
+      let cac1 = document.createElement("td");
+      cac1.textContent = ++mes;
+      let cac2 = document.createElement("td");
+      cac2.textContent = "$" + juros.toFixed(2);
+      let cac3 = document.createElement("td");
+      cac3.textContent = "$0.00 (carencia)";
+      let cac4 = document.createElement("td");
+      cac4.textContent = "$" + juros.toFixed(2);
+      let cac5 = document.createElement("td");
+      cac5.textContent = "$" + saldoDev.toFixed(2);
+      newCac.appendChild(cac1);
+      newCac.appendChild(cac2);
+      newCac.appendChild(cac3);
+      newCac.appendChild(cac4);
+      newCac.appendChild(cac5);
+      tableBody2.appendChild(newCac);
+    }
+
     while (saldoDev > 0){
-        let juros = saldoDev * txjIn;
+        juros = saldoDev * txjIn;
         let amortizacao = parcela - juros;
         saldoDev = saldoDev - amortizacao; 
         if(saldoDev > 0){
