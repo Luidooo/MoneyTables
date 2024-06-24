@@ -1,4 +1,4 @@
-<!<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -13,6 +13,14 @@
   </div>
   <div id="NameLogo">MoneyTables</div>
   <div id="inputs">
+    <h2>Sistema de Amortização Constante (SAC)</h2>
+    <p>O Sistema de Amortização Constante (SAC) é um método de amortização de empréstimos no qual o valor principal do empréstimo é dividido igualmente ao longo do período de pagamento. As parcelas iniciais são mais altas devido aos juros sobre o saldo devedor maior, mas elas diminuem ao longo do tempo conforme o saldo devedor é reduzido.</p>
+    <p>Características principais do SAC:</p>
+    <ul>
+      <li>Amortização constante: a parte do principal a ser paga em cada parcela é sempre a mesma.</li>
+      <li>Parcelas decrescentes: as parcelas iniciais são mais altas e diminuem com o tempo, pois os juros são calculados sobre o saldo devedor restante, que diminui a cada pagamento.</li>
+      <li>Benefício de pagar menos juros totais ao longo do tempo em comparação com outros sistemas de amortização.</li>
+    </ul>
     <ul>
       <li> <input type="number" id="TaxaJuros" placeHolder="Dgite a taxa de juros por mes" required> </li>
       <li> <input type="number" id="DividaInicial" placeHolder="Digite o valor da divida" required> </li>
@@ -24,7 +32,11 @@
   <div id="tables">
     <div id="sacTableData"></div>
     <div id="sacTable"></div>
+ 
   </div>
+
   <script src="../scripts/sac.js"></script>
 </body>
 </html>
+
+
