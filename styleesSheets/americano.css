@@ -1,0 +1,141 @@
+body {
+    height: 100%;
+    color: #ffff;
+    margin: 0;
+    background-color: #9333e3;
+    font-family: Poppins, sans-serif;
+}
+
+#Header{
+  display: flex;
+}
+
+
+#loaded {
+  background-color: #b46cec;
+  color: #9434e4;
+  width:90%;
+  height: 5px;
+}
+
+
+#loading {
+  background-color: #ffffff;
+  color: #9434e4;
+  width:33%;
+  height: 5px;
+}
+
+#NameLogo{ 
+  color: white;
+  padding: 25px;
+
+}
+
+#choice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+h1 {
+  color: #ffff;
+  width: 100%;
+  margin: 0;
+}
+
+
+h2 {
+  color: #ffff;
+  width: 100%;
+}
+h3 {
+  color: #ffff;
+  width: 100%;
+}
+
+li {
+  padding: 4px;
+}
+
+ul {
+  list-style-type: none;
+  }
+
+#inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#tables {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+input {
+  color: black;
+  background-color: white;
+  border: 2px solid #d1a9f3;
+}
+
+input::placeholder {
+  color: black; 
+  opacity: 1; 
+}
+
+
+
+button {
+    background-color: white;
+    color: Black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+button:hover {
+    color: black;
+    background-color: lightgrey;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    color: black;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: white;
+    color: #9333e3;
+}
+
+table tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+table tr:nth-child(odd) {
+    background-color: #d3d3d3;
+}
