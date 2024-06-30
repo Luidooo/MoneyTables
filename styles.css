@@ -1,0 +1,133 @@
+html, body {
+    height: 100%;
+    color: #ffff;
+    margin: 0;
+    background-color: #9333e3;
+    font-family: Poppins, sans-serif;
+}
+
+#Header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#loaded {
+    background-color: #b46cec;
+    color: #9434e4;
+    width: 90%;
+    height: 5px;
+}
+
+#loading {
+    background-color: #ffffff;
+    color: #9434e4;
+    width: 10%;
+    height: 5px;
+}
+
+#NameLogo {
+    color: white;
+    padding: 25px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    padding: 4em 2em;
+    width: 100%;
+    text-align: center;
+}
+
+.transitions {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background: #fff;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+}
+
+.container {
+    padding: 2em;
+}
+
+.header {
+    position: relative;
+    width: max-content;
+    height: max-content;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #ffff;
+    position: relative;
+    line-height: 1;
+    font-size: 120px;
+    font-weight: 400;
+    color: #fff;
+    top: 120px;
+}
+
+.header-revealer {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.header-revealer:after {
+    content: "";
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    color: #ffff;
+    background-color: #9b45e5;
+    border-radius: 25px;
+    border: 2px solid #d1a9f3;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+li {
+    padding: 4px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 25px;
+}
+
