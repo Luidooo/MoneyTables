@@ -112,6 +112,11 @@ aa{
   margin: 0 0 0 25px;
 }
 
+
+bb{
+  margin: 0 0 0 65px;
+}
+
 .a-h3 {
   position: absolute;
   font-weight: 100;
@@ -185,12 +190,27 @@ aa{
   padding-left: 50px;
 }
 
+
+#Investments{
+  top: 1350px;
+  width: 35%;
+  height: 10%;
+  padding-left: 50px;
+}
+
 #Amortizations-Explications{
   top: 900px;
   width: 85%;
   height: 10%;
   padding-left: 50px;
+}
 
+
+#Investments-Explications{
+  top: 1400px;
+  width: 85%;
+  height: 10%;
+  padding-left: 50px;
 }
 
 #circle {
@@ -227,6 +247,18 @@ aa{
 #AmortizationsButtons{
   position: absolute;
   top: 1150px;
+  padding-left: 50px;
+}
+#InvestmentsButtons{
+  position: absolute;
+  top: 1700px;
+  padding-left: 50px;
+}
+
+
+final{
+  position: absolute;
+  top: 2000px;
   padding-left: 50px;
 
 }
