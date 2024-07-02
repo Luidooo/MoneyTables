@@ -7,39 +7,104 @@
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <body data-barba="wrapper">
-  <div id="Header">
-    <div id="loading">.</div>
-    <div id="loaded">.</div> 
+  <div id="circle"></div>
+
+  <div class="a-word" id="Money">Money</div>
+  <div class="a-word" id="With">with</div>
+  <div class="a-word" id="Tables">Tables</div>
+
+  <div class="a-h1" id="Explications">
+   <aa>Empoderando</aa> financeiramente a população por meio do ensino dos principais sistemas de amortização de dívidas praticados por instituições bancárias e análise de investimentos.
   </div>
-  <div id="NameLogo">MoneyTables</div>
-  <div class="transition"></div>
-  <div class="wrapper">
-    <div class="nav">
-          <h1>Money with Tables</h1>
-    </div>
-    <main>
-    <main data-barba="container" data-barba-namespace="home" class="container">
-        <div class="header">
-          <div class="header-revealer"></div>
+  <div class="point" id="Point-About"></div> 
+  <div class="a-h3" id="Point-Explications">
+      Continue descendo para saber mais.
+  </div>
+  <div class="a-h1" id="Amortizations">
+      Amortização de Dívidas
+  </div>
+  <div class="a-h2" id="Amortizations-Explications">
+    <aa>Os</aa>principais sistemas de amortização de dívidas são SAC, Price e Americano.<br>
+    Conheça mais sobre cada um deles: <br><br>
+
+    <b>Sistema de Amortização Constante (SAC):</b> <br>
+    <aa>No</aa> sistema SAC, a amortização do principal é constante ao longo do tempo, resultando em parcelas decrescentes. Esse método é ideal para quem deseja reduzir rapidamente o saldo devedor e pagar menos juros ao longo do período do financiamento. <br><br>
+
+    <b>Tabela Price:</b><br>
+    <aa>Na</aa> Tabela Price, as parcelas são fixas ao longo do tempo. Cada parcela é composta por uma parte de juros e outra de amortização. Esse sistema é adequado para quem prefere ter previsibilidade no valor das parcelas mensais, apesar de pagar mais juros ao longo do período.<br><br>
+
+    <b>Sistema Americano:</b><br>
+    <aa>No</aa> sistema de amortização americano, o pagamento dos juros é realizado periodicamente, enquanto o principal é quitado em uma única parcela no final do prazo do financiamento. Este método é indicado para quem espera ter recursos para quitar a dívida no futuro, mantendo pagamentos menores durante a vigência do financiamento.<br><br>
+
+    <b><aa>Explore</aa> cada um desses sistemas para entender suas características clicando nos botões abaixo:</b><br>
+  </div>
+ 
+  <ul class="horizontal-list" id="AmortizationsButtons">
+      <li>
+        <div class="buttonClass" id="SAC">
+          <button id="buttomMenu">SAC</button>
+          <div id="buttonCircle"></div>
         </div>
-      <ul>
-        <li> <a href="./routes/sacCarencia.html">SAC com Carência</a> </li>
-        <li> <a href="./routes/price.html">Price</a> </li>
-        <li> <a href="./routes/priceCarencia.html">Price com Carência</a> </li>
-        <li> <a href="./routes/americano.html">Americano</a> </li>
-        <li> <a href="./routes/vpl1.html">VPL1</a> </li>
-        <li> <a href="./routes/vpl2.html">VPL2</a> </li>
-        <li> <a href="./routes/tir.html">TIR</a> </li>
-        <li> <a href="./routes/tirPayback.html">TIR com Payback</a> </li>
-      </ul>
-        <div class="footer">(01)</div>
-    </main>
+      </li>
+      <li>
+        <div class="buttonClass" id="Price">
+          <button id="buttomMenu">Price</button>
+          <div id="buttonCircle"></div>
+        </div>
+      </li>
+      <li>
+        <div class="buttonClass" id="Americano">
+          <button id="buttomMenu">Americano</button>
+          <div id="buttonCircle"></div>
+        </div>
+      </li>
+  </ul>
+
+<!--
+  <div class="a-h1" id="Investments">
+      Amortização de Dívidas
   </div>
-  
+  <div class="a-h2" id="Investments-Explications">
+    <aa>Os</aa>principais sistemas de amortização de dívidas são SAC, Price e Americano.<br>
+    Conheça mais sobre cada um deles: <br><br>
+
+    <b>Sistema de Amortização Constante (SAC):</b> <br>
+    <aa>No</aa> sistema SAC, a amortização do principal é constante ao longo do tempo, resultando em parcelas decrescentes. Esse método é ideal para quem deseja reduzir rapidamente o saldo devedor e pagar menos juros ao longo do período do financiamento. <br><br>
+
+    <b>Tabela Price:</b><br>
+    <aa>Na</aa> Tabela Price, as parcelas são fixas ao longo do tempo. Cada parcela é composta por uma parte de juros e outra de amortização. Esse sistema é adequado para quem prefere ter previsibilidade no valor das parcelas mensais, apesar de pagar mais juros ao longo do período.<br><br>
+
+    <b>Sistema Americano:</b><br>
+    <aa>No</aa> sistema de amortização americano, o pagamento dos juros é realizado periodicamente, enquanto o principal é quitado em uma única parcela no final do prazo do financiamento. Este método é indicado para quem espera ter recursos para quitar a dívida no futuro, mantendo pagamentos menores durante a vigência do financiamento.<br><br>
+
+    <b><aa>Explore</aa> cada um desses sistemas para entender suas características clicando nos botões abaixo:</b><br>
+  </div>
+ 
+  <ul class="horizontal-list" id="InvestmentsButtons">
+      <li>
+        <div class="buttonClass" id="SAC">
+          <button id="buttomMenu">SAC</button>
+          <div id="buttonCircle"></div>
+        </div>
+      </li>
+      <li>
+        <div class="buttonClass" id="Price">
+          <button id="buttomMenu">Price</button>
+          <div id="buttonCircle"></div>
+        </div>
+      </li>
+      <li>
+        <div class="buttonClass" id="Americano">
+          <button id="buttomMenu">Americano</button>
+          <div id="buttonCircle"></div>
+        </div>
+      </li>
+  </ul>
+-->
+
   <script src="https://unpkg.com/@barba/core"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
-  <script src="../script.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
 

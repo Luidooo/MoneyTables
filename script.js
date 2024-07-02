@@ -1,60 +1,38 @@
-function  pageTransition() {
-  let tl = gsap.timeline();
+document.addEventListener("DOMContentLoaded", function() {
 
-  tl.to(".transition", {
-    duration: 1,
-    scaleY: 1,
-    transformOrigin: "bottom",
-    ease: "power4.inOut",
-  });
+    animateCircle();  
+    
+    window.addEventListener("scroll", function() {
+        let scrollPosition = window.scrollY;
+        let circle = document.getElementById("circle");
+        let headerHeight = 50; 
 
-  tl.to(".transition", {
-    duration: 0.8,
-    scaleY: 0,
-    transformOrigin: "top",
-    ease: "power4.inOut",
-    delay: 0.2,
-  });
-} 
+        if (window.scrollY > 800) {
+            circle.classList.add("hidden");
+        } else {
+            circle.classList.remove("hidden");
+        }
 
-function contenAnimation() {
-    let tl = gsap.timeline();
-    tl.to("h1", {
-      top: 90,
-      duration: 0.8,
-      ease: "power3.inOut", 
-      delay: 0.25,
+
+        if (scrollPosition > headerHeight) {
+            circle.style.position = "fixed";
+            circle.style.top = "0";
+        } else {
+            circle.style.position = "relative";
+            circle.style.top = headerHeight + "px";
+        }
     });
-}
 
-function delay(n) {
-  n = n || 0;
-  return new Promise((done) => {
-    setTimeout(() => {
-      done();
-    }, n);
-  });
-}
 
-barba.init({
-  sync: true,
-  transitions: [
-    {
-      async leave(data) {
-        const done = this.async();
+  function animateCircle() {
+    gsap.to("#circle", {
+        scale: 2, 
+        borderRadius: "45%",
+        duration: 10,
+        ease: "power3.inOut",
+        yoyo: true,
+        repeat: -1
+    });
+  }
 
-        pageTransition();
-        await delay(100);
-        done();
-      },
-      
-      async enter(data) {
-        contenAnimation();
-      },
-
-      async once(data) {
-        contenAnimation();
-      },
-    },
-  ],
 });
